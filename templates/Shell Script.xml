@@ -1,0 +1,13 @@
+<templateSet group="Shell Script">
+  <template name="bash-template" value="#!/usr/bin/env bash&#10;&#10;&lt;&lt;EOF&#10;&#10;EOF" description="bash scrip template" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="SHELL_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="bash-file-create" value="sudo cat &gt; $FILENAME$ &lt;&lt;- &quot;EOF&quot;&#10;$SELECTION$&#10;EOF" description="create file with contents" toReformat="false" toShortenFQNames="true">
+    <variable name="FILENAME" expression="" defaultValue="FILENAME" alwaysStopAt="true" />
+    <context>
+      <option name="SHELL_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>
