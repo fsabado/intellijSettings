@@ -1,5 +1,5 @@
 <templateSet group="Shell Script">
-  <template name="bash-template" value="#!/usr/bin/env bash&#10;&#10;&lt;&lt;EOF&#10;&#10;EOF" description="bash scrip template" toReformat="false" toShortenFQNames="true">
+  <template name="bash-template" value="#!/usr/bin/env bash&#10;&#10;COMMENTS=$(cat &lt;&lt;- EOF&#10;$SELECTION$&#10;EOF&#10;)" description="bash scrip template" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="SHELL_SCRIPT" value="true" />
     </context>
@@ -10,7 +10,7 @@
       <option name="SHELL_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="bash-here-doc-var" value="VAR=$(cat &lt;&lt;- EOF&#10;$SELECTION$&#10;EOF)" description="create file with contents" toReformat="false" toShortenFQNames="true">
+  <template name="bash-here-doc-var" value="VAR=$(cat &lt;&lt;- EOF&#10;$SELECTION$&#10;EOF&#10;)" description="create file with contents" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="SHELL_SCRIPT" value="true" />
     </context>
