@@ -87,7 +87,7 @@
   <template name="ad-image" value="image::$SELECTION$[]&#10;&#10;$END$" description="Image" toReformat="true" toShortenFQNames="true">
     <context />
   </template>
-  <template name="ad-video-youtube" value="video::$SELECTION$[youtube]&#10;&#10;$END$" description="Youtube video" toReformat="false" toShortenFQNames="true">
+  <template name="ad-video-youtube" value="video::$SELECTION$[youtube,width=100%]&#10;&#10;$END$" description="Youtube video" toReformat="false" toShortenFQNames="true">
     <context />
   </template>
   <template name="ad-video-vimeo" value="video::$SELECTION$[vimeo]&#10;&#10;$END$" description="Vimeo video" toReformat="false" toShortenFQNames="true">
@@ -102,7 +102,10 @@
       <option name="AsciiDoc" value="true" />
     </context>
   </template>
-  <template name="ad-video-youtube" value="video::$SELECTION$[youtube,width=100%]&#10;&#10;$END$" description="Youtube video" toReformat="false" toShortenFQNames="true">
-    <context />
+  <template name="ad-template1" value="= $TITLE$&#10;:toc: left&#10;:experimental:&#10;&#10;++++&#10;&lt;script src=&quot;https://darshandsoni.com/asciidoctor-skins/switcher.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&#10;++++" description="Asciidoc template1" toReformat="false" toShortenFQNames="true">
+    <variable name="TITLE" expression="" defaultValue="TITLE" alwaysStopAt="true" />
+    <context>
+      <option name="AsciiDoc" value="true" />
+    </context>
   </template>
 </templateSet>
