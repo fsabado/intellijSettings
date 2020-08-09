@@ -64,14 +64,16 @@
       <option name="AsciiDoc" value="true" />
     </context>
   </template>
-  <template name="ad-iframe" value="== $Title$&#10;&#10;++++&#10;&lt;div id=&quot;content&quot;&gt;&#10;    &lt;iframe id=&quot;full-page&quot;&#10;    width=&quot;100%&quot; frameborder=&quot;0&quot; wmode=&quot;transparent&quot;&#10;    scrolling=&quot;no&quot;&#10;    src=&quot;$SELECTION$&quot;&#10;    height=&quot;1000&quot;&#10;    &gt;&lt;p&gt;Unsupported&lt;/p&gt;&#10;    &lt;/iframe&gt;&#10;&lt;/div&gt;&#10;++++&#10;&#10;$END$" description="embed an iframe" toReformat="false" toShortenFQNames="true">
-    <variable name="Title" expression="" defaultValue="Title" alwaysStopAt="true" />
+  <template name="ad-iframe" value=".$Title$&#10;++++&#10;&lt;div id=&quot;content&quot;&gt;&#10;    &lt;iframe id=&quot;full-page&quot;&#10;    width=&quot;100%&quot; frameborder=&quot;0&quot; wmode=&quot;transparent&quot;&#10;    scrolling=&quot;no&quot;&#10;    src=&quot;$SOURCE$.html&quot;&#10;    height=&quot;1000&quot;&#10;    &gt;&lt;p&gt;Unsupported&lt;/p&gt;&#10;    &lt;/iframe&gt;&#10;&lt;/div&gt;&#10;++++&#10;&#10;$END$" description="embed an iframe" toReformat="false" toShortenFQNames="true">
+    <variable name="Title" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SOURCE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="AsciiDoc" value="true" />
     </context>
   </template>
-  <template name="ad-iframe-srcdoc" value=".$Title$&#10;++++&#10;&lt;div id=&quot;content&quot;&gt;&#10;    &lt;iframe id=&quot;full-page&quot;&#10;    width=&quot;100%&quot; frameborder=&quot;0&quot; wmode=&quot;transparent&quot;&#10;    scrolling=&quot;no&quot;&#10;    src='&#10;$SELECTION$&#10;    '&#10;    height=&quot;1000&quot;&#10;    &gt;&lt;p&gt;Unsupported&lt;/p&gt;&#10;    &lt;/iframe&gt;&#10;&lt;/div&gt;&#10;++++&#10;&#10;$END$" description="embed an iframe, with srcdoc" toReformat="false" toShortenFQNames="true">
+  <template name="ad-iframe-srcdoc" value=".$Title$&#10;++++&#10;&lt;div id=&quot;content&quot;&gt;&#10;    &lt;iframe id=&quot;full-page&quot;&#10;    width=&quot;100%&quot; frameborder=&quot;0&quot; wmode=&quot;transparent&quot;&#10;    scrolling=&quot;no&quot;&#10;    src='&#10;$HTML$&#10;    '&#10;    height=&quot;1000&quot;&#10;    &gt;&lt;p&gt;Unsupported&lt;/p&gt;&#10;    &lt;/iframe&gt;&#10;&lt;/div&gt;&#10;++++&#10;&#10;$END$" description="embed an iframe, with srcdoc" toReformat="false" toShortenFQNames="true">
     <variable name="Title" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HTML" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="AsciiDoc" value="true" />
     </context>
