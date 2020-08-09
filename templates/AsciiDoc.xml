@@ -50,4 +50,7 @@
   <template name="ad-include-offset" value="include::$FILENAME$.adoc[leveloffset=+1]&#10;&#10;$END$" description="Include file, offset" toReformat="false" toShortenFQNames="true">
     <variable name="FILENAME" expression="" defaultValue="" alwaysStopAt="true" />
   </template>
+  <template name="ad-video-youtube" value="video::$SELECTION$[youtube,width=100%]&#10;&#10;$END$" description="Youtube video" toReformat="false" toShortenFQNames="true">
+    <context />
+  </template>
 </templateSet>
