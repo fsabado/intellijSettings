@@ -87,7 +87,7 @@
   <template name="ad-image" value="image::$SELECTION$[]&#10;&#10;$END$" description="Image" toReformat="true" toShortenFQNames="true">
     <context />
   </template>
-  <template name="ad-video-youtube" value="video::$SELECTION$[youtube]&#10;&#10;$END$" description="Youtube video" toReformat="false" toShortenFQNames="true">
+  <template name="ad-video-youtube" value="video::$SELECTION$[youtube,width=100%]&#10;&#10;$END$" description="Youtube video" toReformat="false" toShortenFQNames="true">
     <context />
   </template>
   <template name="ad-video-vimeo" value="video::$SELECTION$[vimeo]&#10;&#10;$END$" description="Vimeo video" toReformat="false" toShortenFQNames="true">
@@ -101,8 +101,5 @@
     <context>
       <option name="AsciiDoc" value="true" />
     </context>
-  </template>
-  <template name="ad-video-youtube" value="video::$SELECTION$[youtube,width=100%]&#10;&#10;$END$" description="Youtube video" toReformat="false" toShortenFQNames="true">
-    <context />
   </template>
 </templateSet>
