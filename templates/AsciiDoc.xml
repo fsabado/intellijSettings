@@ -102,4 +102,10 @@
       <option name="AsciiDoc" value="true" />
     </context>
   </template>
+  <template name="ad-template1" value="= $TITLE$&#10;:toc: left&#10;:experimental:&#10;&#10;++++&#10;&lt;script src=&quot;https://darshandsoni.com/asciidoctor-skins/switcher.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&#10;++++" description="Asciidoc template1" toReformat="false" toShortenFQNames="true">
+    <variable name="TITLE" expression="" defaultValue="TITLE" alwaysStopAt="true" />
+    <context>
+      <option name="AsciiDoc" value="true" />
+    </context>
+  </template>
 </templateSet>
