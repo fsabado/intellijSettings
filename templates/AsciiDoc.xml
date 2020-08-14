@@ -108,4 +108,14 @@
       <option name="AsciiDoc" value="true" />
     </context>
   </template>
+  <template name="ad-notes" value="[Note]&#10;--&#10;$SELECTION$&#10;--" description="notes" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="AsciiDoc" value="true" />
+    </context>
+  </template>
+  <template name="ad-quote" value="[quote, author]&#10;--&#10;$SELECTION$&#10;--" description="quotes" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="AsciiDoc" value="true" />
+    </context>
+  </template>
 </templateSet>
