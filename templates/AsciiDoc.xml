@@ -118,4 +118,18 @@
       <option name="AsciiDoc" value="true" />
     </context>
   </template>
+    <template name="ad-plantuml" value="[plantuml,$DIAGRAM_NAME$,png]&#10;....&#10;$SOURCE$&#10;....&#10;&#10;$END$" description="Plant UML" toReformat="false" toShortenFQNames="true">
+    <variable name="DIAGRAM_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SOURCE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="AsciiDoc" value="true" />
+    </context>
+  </template>
+  <template name="ad-plantuml-inc" value="[plantuml,$DIAGRAM_NAME$,png]&#10;....&#10;include::$SOURCE$[]&#10;....&#10;&#10;$END$" description="Plant UML" toReformat="false" toShortenFQNames="true">
+    <variable name="DIAGRAM_NAME" expression="" defaultValue="diagram-clases" alwaysStopAt="true" />
+    <variable name="SOURCE" expression="" defaultValue="PATH" alwaysStopAt="true" />
+    <context>
+      <option name="AsciiDoc" value="true" />
+    </context>
+  </template>
 </templateSet>
