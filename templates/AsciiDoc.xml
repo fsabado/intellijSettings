@@ -118,7 +118,7 @@
       <option name="AsciiDoc" value="true" />
     </context>
   </template>
-    <template name="ad-plantuml" value="[plantuml,$DIAGRAM_NAME$,png]&#10;....&#10;$SOURCE$&#10;....&#10;&#10;$END$" description="Plant UML" toReformat="false" toShortenFQNames="true">
+  <template name="ad-plantuml" value="[plantuml,$DIAGRAM_NAME$,png]&#10;....&#10;$SOURCE$&#10;....&#10;&#10;$END$" description="Plant UML" toReformat="false" toShortenFQNames="true">
     <variable name="DIAGRAM_NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="SOURCE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -128,6 +128,26 @@
   <template name="ad-plantuml-inc" value="[plantuml,$DIAGRAM_NAME$,png]&#10;....&#10;include::$SOURCE$[]&#10;....&#10;&#10;$END$" description="Plant UML" toReformat="false" toShortenFQNames="true">
     <variable name="DIAGRAM_NAME" expression="" defaultValue="diagram-clases" alwaysStopAt="true" />
     <variable name="SOURCE" expression="" defaultValue="PATH" alwaysStopAt="true" />
+    <context>
+      <option name="AsciiDoc" value="true" />
+    </context>
+  </template>
+  <template name="ad-tip" value="[TIP]&#10;--&#10;$SELECTION$&#10;--" description="tips" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="AsciiDoc" value="true" />
+    </context>
+  </template>
+  <template name="ad-important" value="[IMPORTANT]&#10;--&#10;$SELECTION$&#10;--" description="important" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="AsciiDoc" value="true" />
+    </context>
+  </template>
+  <template name="ad-warning" value="[WARNING]&#10;--&#10;$SELECTION$&#10;--" description="warning" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="AsciiDoc" value="true" />
+    </context>
+  </template>
+  <template name="ad-caution" value="[CAUTION]&#10;--&#10;$SELECTION$&#10;--" description="caution" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="AsciiDoc" value="true" />
     </context>
