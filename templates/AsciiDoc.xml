@@ -1,42 +1,31 @@
 <templateSet group="AsciiDoc">
   <template name="ad-source:ruby" value=".$FILENAME$.rb&#10;[source,ruby,linenums]&#10;----&#10;$SELECTION$&#10;----&#10;&#10;$END$" description="Ruby source code" toReformat="true" toShortenFQNames="true">
     <variable name="FILENAME" expression="" defaultValue="" alwaysStopAt="true" />
-    <context />
   </template>
   <template name="ad-source:java" value=".$FILENAME$.java&#10;[source,java,linenums]&#10;----&#10;$SELECTION$&#10;----&#10;&#10;$END$" description="Java source code" toReformat="true" toShortenFQNames="true">
     <variable name="FILENAME" expression="" defaultValue="" alwaysStopAt="true" />
-    <context />
   </template>
   <template name="ad-source:scala" value=".$FILENAME$.scala&#10;[source,scala,linenums]&#10;----&#10;$SELECTION$&#10;----&#10;&#10;$END$" description="Scala source code" toReformat="true" toShortenFQNames="true">
     <variable name="FILENAME" expression="" defaultValue="" alwaysStopAt="true" />
-    <context />
   </template>
   <template name="ad-source:python" value=".$FILENAME$.python&#10;[source,python,linenums]&#10;----&#10;$SELECTION$&#10;----&#10;&#10;$END$" description="Python source code" toReformat="true" toShortenFQNames="true">
     <variable name="FILENAME" expression="" defaultValue="" alwaysStopAt="true" />
-    <context />
   </template>
   <template name="ad-source:bash" value=".$FILENAME$.sh&#10;[source,bash,linenums]&#10;----&#10;$SELECTION$&#10;----&#10;&#10;$END$" description="Bash source code" toReformat="true" toShortenFQNames="true">
     <variable name="FILENAME" expression="" defaultValue="" alwaysStopAt="true" />
-    <context />
   </template>
   <template name="ad-source:groovy" value=".$FILENAME$.groovy&#10;[source,groovy,linenums]&#10;----&#10;$SELECTION$&#10;----&#10;&#10;$END$" description="Groovy source code" toReformat="true" toShortenFQNames="true">
     <variable name="FILENAME" expression="" defaultValue="" alwaysStopAt="true" />
-    <context />
   </template>
   <template name="ad-source:javascript" value=".$FILENAME$.js&#10;[source,javascript,linenums]&#10;----&#10;$SELECTION$&#10;----&#10;&#10;$END$" description="Javascript source code" toReformat="true" toShortenFQNames="true">
     <variable name="FILENAME" expression="" defaultValue="" alwaysStopAt="true" />
-    <context />
   </template>
   <template name="ad-source" value=".$FILENAME$&#10;[source,linenums]&#10;----&#10;$SELECTION$&#10;----&#10;&#10;$END$" description="Source code" toReformat="true" toShortenFQNames="true">
     <variable name="FILENAME" expression="" defaultValue="" alwaysStopAt="true" />
-    <context />
   </template>
-  <template name="ad-source-callouts" value="[source,ruby,linenums]&#10;----&#10;require 'sinatra' // &lt;.&gt;&#10;&#10;get '/hi' do // &lt;.&gt;&#10;  &quot;Hello World!&quot; // &lt;.&gt;&#10;end&#10;----&#10;&lt;.&gt; Library import&#10;&lt;.&gt; URL mapping&#10;&lt;.&gt; Content for response&#10;&#10;$END$" description="Source code with callouts" toReformat="true" toShortenFQNames="true">
-    <context />
-  </template>
+  <template name="ad-source-callouts" value="[source,ruby,linenums]&#10;----&#10;require 'sinatra' // &lt;.&gt;&#10;&#10;get '/hi' do // &lt;.&gt;&#10;  &quot;Hello World!&quot; // &lt;.&gt;&#10;end&#10;----&#10;&lt;.&gt; Library import&#10;&lt;.&gt; URL mapping&#10;&lt;.&gt; Content for response&#10;&#10;$END$" description="Source code with callouts" toReformat="true" toShortenFQNames="true" />
   <template name="ad-source:xml" value=".$FILENAME$.xml&#10;[source,xml,linenums]&#10;----&#10;$SELECTION$&#10;----&#10;&#10;$END$" description="XML source code" toReformat="true" toShortenFQNames="true">
     <variable name="FILENAME" expression="" defaultValue="" alwaysStopAt="true" />
-    <context />
   </template>
   <template name="ad-glossary" value="[glossary]&#10;$WORD1$:: $DEFINITION1$" description="glossary" toReformat="false" toShortenFQNames="true">
     <variable name="WORD1" expression="" defaultValue="word" alwaysStopAt="true" />
@@ -84,18 +73,11 @@
       <option name="AsciiDoc" value="true" />
     </context>
   </template>
-  <template name="ad-image" value="image::$SELECTION$[]&#10;&#10;$END$" description="Image" toReformat="true" toShortenFQNames="true">
-    <context />
-  </template>
-  <template name="ad-video-youtube" value="video::$SELECTION$[youtube,width=100%]&#10;&#10;$END$" description="Youtube video" toReformat="false" toShortenFQNames="true">
-    <context />
-  </template>
-  <template name="ad-video-vimeo" value="video::$SELECTION$[vimeo]&#10;&#10;$END$" description="Vimeo video" toReformat="false" toShortenFQNames="true">
-    <context />
-  </template>
+  <template name="ad-image" value="image::$SELECTION$[]&#10;&#10;$END$" description="Image" toReformat="true" toShortenFQNames="true" />
+  <template name="ad-video-youtube" value="video::$SELECTION$[youtube,width=100%]&#10;&#10;$END$" description="Youtube video" toReformat="false" toShortenFQNames="true" />
+  <template name="ad-video-vimeo" value="video::$SELECTION$[vimeo]&#10;&#10;$END$" description="Vimeo video" toReformat="false" toShortenFQNames="true" />
   <template name="ad-sidebar" value=".$TITLE$&#10;****&#10;$SELECTION$&#10;****&#10;&#10;$END$" description="Sidebar" toReformat="false" toShortenFQNames="true">
     <variable name="TITLE" expression="" defaultValue="&quot;Title&quot;" alwaysStopAt="true" />
-    <context />
   </template>
   <template name="ad-html-css-switcher" value="++++&#10;&lt;script src=&quot;https://darshandsoni.com/asciidoctor-skins/switcher.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&#10;++++" description="css switcher" toReformat="false" toShortenFQNames="true">
     <context>
