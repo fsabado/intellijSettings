@@ -6,6 +6,7 @@
       <mapping pattern="module1" type="PLAIN_TEXT" />
       <mapping ext="tpl" type="PLAIN_TEXT" />
       <mapping ext="tcl" type="PLAIN_TEXT" />
+      <mapping ext="adoc" type="PLAIN_TEXT" />
       <mapping ext="dk" type="PLAIN_TEXT" />
       <mapping ext="plantuml" type="PlantUML file" />
       <removed_mapping ext="apk" approved="true" type="ARCHIVE" />
